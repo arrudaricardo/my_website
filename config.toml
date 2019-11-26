@@ -25,6 +25,9 @@ footerCopyright = " &#183; <a href=\"https://creativecommons.org/licenses/by-nc/
 justifyContent = false
 themeColor = "#494f5c"
 [[params.social]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/ricardo-arruda-508b918b"
+[[params.social]]
 name = "instagram"
 url = "https://www.instagram.com/ricarruda7/"
 [[params.social]]
