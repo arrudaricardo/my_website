@@ -25,6 +25,9 @@ footerCopyright = " &#183; <a href=\"https://creativecommons.org/licenses/by-nc/
 justifyContent = false
 themeColor = "#494f5c"
 [[params.social]]
+name = "Dev.to"
+url = "https://dev.to/arrudaricardo/"
+[[params.social]]
 name = "LinkedIn"
 url = "https://www.linkedin.com/in/ricardo-arruda-508b918b"
 [[params.social]]
