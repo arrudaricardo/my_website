@@ -1,77 +1,41 @@
 baseURL = "https://dearruda.me"
-languageCode = "en-us"
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
 defaultContentLanguage = "en"
-title = "Ricardo de Arruda"
-theme = "hermit"
-# enableGitInfo = true
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-# hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
-rssLimit = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 enableEmoji = true
 googleAnalytics = "UA-129215154-4"
-# disqusShortname = "yourdiscussshortname"
-
+languageCode = "en-us"
+pygmentsCodefences = true
+pygmentsUseClasses = true
+rssLimit = 10
+theme = "hermit"
+title = "Ricardo de Arruda"
 [author]
-  name = "Ricardo de Arruda"
-
+name = "Ricardo de Arruda"
 [blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
-
-[taxonomies]
-  tag = "tags"
-  category = ""  # Categories are disabled by default.
-
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
-
-  # Metadata mostly used in document's head
-  description = "Ricardo de Arruda personal webpage."
-  # images = [""]
-  themeColor = "#494f5c"
-
-  Iam = "I'm a"
-  IamList = ["tech lover","linux fanboy","pythoneer 🐍","minimalist","guitar player"]
-  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-  # bgImg = ""  # Homepage background-image URL
-
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  # gitUrl = "https://github.com/username/repository/commit/"
-
-  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
-  justifyContent = false  # Set "text-align: justify" to `.content`.
-
-  # Add custom css
-  # customCSS = ["css/foo.css", "css/bar.css"]
-
-  # Social Icons
-  # Check https://github.com/Track3/hermit#social-icons for more info.
-
-  [[params.social]]
-    name = "instagram"
-    url = "https://www.instagram.com/ricarruda7/"
-
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/arrudaricardo/"
-
-   [[params.social]]
-    name = "email"
-    url = "mailto:settiricardo@gmail.com?subject=Hey%20Ricardo.&body="
-    
-   [[params.social]]
-    name = "cv"
-    url = "resume"
-
 [menu]
-
-  #[[menu.main]]
-    #name = "About"
-    #url = "about-ricardo/"
-    #weight = 20
+[params]
+Iam = "I'm a"
+IamList = ["Full Stack Dev", "VIM fanboy", "minimalist", "Linux Fanboy", "pythoneer 🐍"]
+dateform = "Jan 2, 2006"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04 -0700"
+dateformShort = "Jan 2"
+description = "Ricardo de Arruda personal webpage."
+footerCopyright = " &#183; <a href=\"https://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY-NC 4.0</a>"
+justifyContent = false
+themeColor = "#494f5c"
+[[params.social]]
+name = "instagram"
+url = "https://www.instagram.com/ricarruda7/"
+[[params.social]]
+name = "github"
+url = "https://github.com/arrudaricardo/"
+[[params.social]]
+name = "email"
+url = "mailto:settiricardo@gmail.com?subject=Hey%20Ricardo.&body="
+[[params.social]]
+name = "cv"
+url = "resume"
+[taxonomies]
+category = ""
+tag = "tags"
