@@ -4,7 +4,7 @@ description: Simple Tic-Tac-Toe game using React Hooks
 author: "Ricardo de Arruda"
 date: 2019-09-22
 draft: false 
-tags: React, Hooks, beginner, game
+tags: [React, Hooks, beginner, game]
 ---
 
 ## Introduction
