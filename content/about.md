@@ -11,7 +11,7 @@ date: 2019-05-30T18:52:06.000+00:00
 
 ***
 
-#### AppAcademy
+#### App Academy
 
 * San Francisco - CA , USA, 2019
 * An immersive 1000-hour full-stack software development course.
@@ -81,6 +81,7 @@ date: 2019-05-30T18:52:06.000+00:00
 * Node.js (Express.js, Jest)
 * Ruby (Ruby on Rails, Capybara, RSpec)
 * Database (Postgresql, MongoDB)
+* Go (Gin, Hugo)
 
 #### Front-end
 
