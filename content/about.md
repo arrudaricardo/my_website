@@ -5,11 +5,11 @@ date: 2019-05-30T18:52:06.000+00:00
 ---
 # Ricardo de Arruda
 
-#### settiricardo@gmail.com  http://dearruda.me
-
-## Education
+##### settiricardo@gmail.com  http://dearruda.me
 
 ***
+
+## Education
 
 #### App Academy
 
@@ -39,15 +39,7 @@ date: 2019-05-30T18:52:06.000+00:00
 
 ***
 
-### Work Experence
-
-* Marketing Coodenator - BRMALLS
-* Londrina, Brazil - 2013
-* Tracking sales data
-
-
-* Maintaining databases
-* Preparing reports
+## Work Experence
 
 #### Student Desk Worker/Resident Assistace - University of Central Oklahoma
 
@@ -73,9 +65,9 @@ date: 2019-05-30T18:52:06.000+00:00
 
 ***
 
-### Technical Skills
+## Technical Skills
 
-#### Back-end
+### Back-end
 
 * Python (Flask Django, Jinja, sqlalchemy)
 * Node.js (Express.js, Jest)
@@ -94,7 +86,7 @@ date: 2019-05-30T18:52:06.000+00:00
 
 ***
 
-### Language
+## Language
 
 * Portuguese - Mother tongue
 * English - Fluent
