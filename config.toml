@@ -12,15 +12,11 @@ title = "Ricardo de Arruda"
 [author]
 name = "Ricardo de Arruda"
 [blackfriday]
+
 [menu]
  [[menu.main]]
  name = "Posts"
  url = "posts/"
- weight = 10
-
- [[menu.main]]
- name = "About"
- url = "about"
  weight = 10
 
 [params]
@@ -34,24 +30,32 @@ description = "Ricardo de Arruda personal web-page."
 footerCopyright = " &#183; <a href=\"https://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY-NC 4.0</a>"
 justifyContent = false
 themeColor = "#494f5c"
+
 [[params.social]]
-name = "devto"
-url = "https://dev.to/arrudaricardo/"
-[[params.social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/ricardo-arruda-508b918b"
-[[params.social]]
-name = "instagram"
-url = "https://www.instagram.com/ricarruda7/"
+name = "cv"
+url = "about"
+
 [[params.social]]
 name = "github"
 url = "https://github.com/arrudaricardo/"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/ricardo-arruda-508b918b"
+
+[[params.social]]
+name = "instagram"
+url = "https://www.instagram.com/ricarruda7/"
+
+[[params.social]]
+name = "devto"
+url = "https://dev.to/arrudaricardo/"
+
 [[params.social]]
 name = "email"
 url = "mailto:settiricardo@gmail.com?subject=Hey%20Ricardo.&body="
-[[params.social]]
-name = "cv"
-url = "resume"
+
+
 [taxonomies]
 category = ""
 tag = "tags"
