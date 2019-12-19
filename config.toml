@@ -18,12 +18,12 @@ url = "posts/"
 weight = 10
 [params]
 Iam = "I'm a"
-IamList = ["Full Stack Dev", "VIM fanboy", "minimalist", "Linux Fanboy", "pythoneer 🐍"]
+IamList = ["Full Stack Dev", "VIM fanboy", "minimalist", "FOSS advocate ", "pythoneer 🐍"]
 dateform = "Jan 2, 2006"
 dateformNum = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04 -0700"
 dateformShort = "Jan 2"
-description = "Ricardo de Arruda personal web-page."
+description = "Ricardo de Arruda personal web-page"
 footerCopyright = " &#183; <a href=\"https://creativecommons.org/licenses/by-nc/4.0/\" target=\"_blank\" rel=\"noopener\">CC BY-NC 4.0</a>"
 justifyContent = false
 themeColor = "#494f5c"
