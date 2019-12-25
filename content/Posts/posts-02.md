@@ -29,8 +29,8 @@ State Machine Diagram
 
 An nothing better than React from dealing with states.
 
-
 For generating a new 2D grid with size and trash chance per grid and return a tuple [grid: Grid[][], robotPos: number[]], and grid been a nested array with [pos: number[], hasTrash: boolean, hasRobot: boolean], so we can map inside React.
+
 ```javascript
 export function generateGridArray(size, chanceOfTrash) {
     let robotPos;
@@ -78,7 +78,6 @@ function getGridArrayStateSum(gridArray) {
     for (let i = 0; i < gridArray.length; i++) {
         for (let j = 0; j < gridArray[i].length; j++) {
             let box = gridArray[i][j];
-            
             if (box[1]){ // has trash
                 stateSum += boxNum * (gridArray.length ** 2)
             }
@@ -94,6 +93,7 @@ function getGridArrayStateSum(gridArray) {
 ```
 
 Another helper function is to check if the game is over or if the Robot got into a infinite loop, by saving the passed states.
+
 ```javascript
 function gameOver(gridArray) {
     return !gridArray.some(arr => arr.some(e => e[1] === true));
@@ -127,7 +127,6 @@ Also the default game logic will move the Robot randomly to a grid if has a tras
 
 ![game](https://thepracticaldev.s3.amazonaws.com/i/06k45pmvfllu2ee0b76u.gif)
 
-
 Intuitively I supposed that the best behavior to collect all trashes in a random Grid with the minimum amount of moves, on average, would be the default game logic, and I need tools in order to test this hypothesis. 
 For doing that I need to map my custom action, for each state, and score the efficiency of each state. Doing in a reducer fashion way, so I can have access in all components later:
 
@@ -143,16 +142,14 @@ For doing that I need to map my custom action, for each state, and score the eff
 
 ![build](https://thepracticaldev.s3.amazonaws.com/i/qg3sjzv53wi5w4w4n94v.gif)
 
-
-But I need also a way to generate new Robots, test it and quantify its result, and for that a simple table that can compute the average for each game would be enough. 
-
+But I need also a way to generate new Robots, test it and quantify its result, and for that a simple table that can compute the average for each game would be enough.
 
 ![result](https://thepracticaldev.s3.amazonaws.com/i/muh658p4exi07ecm3g5r.gif)
-
 
 However there's too many different states, for a 5x5 grid size there's is 3400 different possible Robots. I need a way to generate random Robots and select the best ones.
 
 And for that I need many states:
+
 ```javascript
     const [sampleSize, setSampleSize] = useState(10)
     const [selectionPercetage, setSelectionPercetage] = useState(30)
@@ -173,7 +170,7 @@ Since JavaScript Objects are assign by reference, and I need a new Grid Object f
 
 ```javascript
     JSON.parse(JSON.stringify(gridArray))
-``` 
+```
 
 I have all my tools in order to test many iteration and select the one which has the higher score by the top **selection percentage** * **sample size** of each sample, and add to the new iteration, N **iteration** time.
 
@@ -189,10 +186,6 @@ let selectedRobots = []
 
 ![selection](https://thepracticaldev.s3.amazonaws.com/i/7nhai074qh74sumjg7k8.gif)
 
-
 After trying some huge iteration (10^5), that took some time ... I think I found my answer for the question, however I wont give any spoiler, be welcome to try for yourself at:
 
 [trashcollectorrobot.netlify.com](https://trashcollectorrobot.netlify.com/)
-
-
-
