@@ -7,7 +7,6 @@ draft: false
 tags: [React, JavaScript]
 ---
 
-
 My brother gave me a problem to solve, he said that in Sean Carrol book [Something Deeply Hidden](https://www.goodreads.com/en/book/show/44065062-something-deeply-hidden) he talks about a problem where a robot has to collect trashes in a 2D grid.
 
 However the Robot can only see the top, down, left and right grid around it, moreover he has a short memory, he forgets about the past state (stateless) every time he perform a action, that could be, move left, right, up, down or get the trash.

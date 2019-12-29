@@ -13,15 +13,13 @@ React Hooks is a new addition to [React version 16.8](https://reactjs.org/docs/h
 The Idea for this Tutorial is to reproduce the game [Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe
 ) using React Hooks.
 
-
 ## Setup
 For this tutorial we going to user [ create-react-app ](https://github.com/facebook/create-react-app
 ), so be sure to have [ Nodejs and NPM](https://nodejs.org/en/
 ) install in your computer.
 
-
 In your terminal execute the command:
-```
+```bash
 npx create-react-app tic-tac-toe
 cd tic-tac-toe
 ```
@@ -38,7 +36,7 @@ The Table.js going to be a component that going to wrap the TicBlock.js, Ticbloc
 We need to import Table to our App.js first.
 
 App.js
-```
+```javascript
 import React from 'react';
 // Allow us to use JXS
 import './App.css';
@@ -67,7 +65,7 @@ First we need to import the Hook [ userState ](https://reactjs.org/docs/hooks-re
 [^1]: https://reactjs.org/docs/introducing-jsx.html
 
 For Table we can set three useState, that Table and Table's child will have access.
-```
+```javascript
     const [table, setTable] = useState([0,0,0, 0,0,0, 0,0,0])
     const [winner, setWinner] = useState([])
     const [last, setLast] = useState(Math.random() > 0.5? 5:3)
@@ -80,7 +78,7 @@ and 5 mapping the O. and set a random last to be 5 or 3.
 Now we can use the React Hook *useEffect* that will run everytime that *table* state changed.
 The *useEffect* will check if the game is over, if the sum of a row get's to 9,3x3,we X is the winner if 
 the sum gets 15, 3x5, we know that the O is the winner, and the same applying to diagonal.
-```
+```javascript
     useEffect(()=>{
         //checking winner row and col
         for (let i = 0; i <= 2; i++){
@@ -117,11 +115,11 @@ for any update in *[table]* in this case.
 For the blocks we created a component call *TicBlock* that have an attribute *number*
 that will be unique, *last* that will receive the *last* and *setLast* Hooks and *table* that
 will receive the Hooks *table* and *setTable*.
-```
+```javascript
 <TicBlock number={0 to 9} last={[last,setLast]} table={[table,setTable]} winner={winner}/> 
 ```
 For the *TicBLock* we gonna define get the props for the parent *table*:
-```
+```javascript
     const number = props.number 
     const [last, setLast] = props.last
     const [table, setTable] = props.table
@@ -130,16 +128,16 @@ For the *TicBLock* we gonna define get the props for the parent *table*:
 So we can use the props to check if we render a empty space, X or O 
 
 if is Circle:
-```
+```javascript
 <Circle fill={winner.indexOf(number) !== -1? 'red':""} width="100%" height="100%"/>
 ```
 If is X:
-```
+```javascript
 <x fill={winner.indexof(number) !== -1? 'red':""} width="100%" height="100%"/>
 ```
 Now we need a onClick event listening on the *TicBLock* and change the
 state *setTable* to X or O:
-```
+```javascript
 <div className="ticblock" onClick={() => {
     if (table[number] === 0 && winner.length === 0) {
     setTable(( () => {
@@ -152,5 +150,3 @@ state *setTable* to X or O:
 ```
 You can test the game [here](https://codesandbox.io/s/github/arrudaricardo/tic-tac-toe-react-hook/tree/master/?fontsize=14
 ).
-
-a
