@@ -8,7 +8,6 @@ pygmentsCodefences = true
 pygmentsUseClasses = true
 rssLimit = 10
 resumeDownloadLink = "hello"
-theme = "hermit"
 title = "Ricardo de Arruda"
 [author]
 name = "Ricardo de Arruda"
